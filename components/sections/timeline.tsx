@@ -89,7 +89,7 @@ export default function Timeline() {
                         transition={{ duration: 0.6, delay: 0.6 }}
                     >
                         <Image
-                            src="/placeholder.svg"
+                            src="https://res.cloudinary.com/dg2pzsxp0/image/upload/v1724918145/Black_And_Blue_Abstract_Jamboard_Background_i3fx7q.png"
                             alt="Team collaboration"
                             fill
                             className="object-cover rounded-lg"
