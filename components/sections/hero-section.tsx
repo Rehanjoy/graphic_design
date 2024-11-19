@@ -17,9 +17,10 @@ export function HeroSection() {
        
       <div className="container px-2 md:px-10  mx-auto  py-12  relative">
                     {/* Background Gradient Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#0D0D12] to-[#1C1C24] opacity-80 z-0"></div>
-            <div className="absolute top-1/4 left-1/3 w-[800px] h-[800px] bg-purple-600 opacity-10 blur-3xl rounded-full z-0" />
-            <div className="absolute bottom-1/4 right-1/3 w-[700px] h-[700px] bg-pink-600 opacity-10 blur-3xl rounded-full z-0" />
+                          {/* Background Gradient */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0D0D12] to-[#1C1C24] opacity-80 z-0"></div>
+        <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 w-[200px] h-[200px] sm:w-[400px] sm:h-[400px] lg:w-[800px] lg:h-[800px] bg-purple-600 opacity-10 blur-3xl rounded-full z-0"></div>
+        <div className="absolute bottom-1/4 right-1/2 transform translate-x-1/2 w-[180px] h-[180px] sm:w-[350px] sm:h-[350px] lg:w-[700px] lg:h-[700px] bg-pink-600 opacity-10 blur-3xl rounded-full z-0"></div>
         <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Text Content */}
           <motion.div
