@@ -147,9 +147,7 @@ export default function Footer() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              123 Web Design Street<br />
-              Digital City, DC 12345<br />
-              United States
+              Palestine Hebron
             </motion.p>
           </div>
         </div>
