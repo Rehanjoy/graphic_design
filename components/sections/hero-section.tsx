@@ -13,17 +13,17 @@ const stats = [
 export function HeroSection() {
   return (
     <>
-    <section className="bg-[#0D0D12] rounded-xl min-h-4xl flex items-center">
+    <section className="   min-h-4xl flex items-center">
        
-      <div className="container px-2 md:px-10  mx-auto  py-12  relative">
+      <div className="container px-2 md:px-10  mx-auto  py-12   relative">
                     {/* Background Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0D0D12] to-[#1C1C24] opacity-80 z-0"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0D0D12] to-[#1C1C24] opacity-80 z-0 rounded-2xl"></div>
         <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 w-[200px] h-[200px] sm:w-[400px] sm:h-[400px] lg:w-[800px] lg:h-[800px] bg-purple-600 opacity-10 blur-3xl rounded-full z-0"></div>
         <div className="absolute bottom-1/4 right-1/2 transform translate-x-1/2 w-[180px] h-[180px] sm:w-[350px] sm:h-[350px] lg:w-[700px] lg:h-[700px] bg-pink-600 opacity-10 blur-3xl rounded-full z-0"></div>
-        <div className="grid md:grid-cols-2 gap-8 items-center">
+        <div className="grid md:grid-cols-2 gap-8 items-center ">
           {/* Text Content */}
           <motion.div
-            className="max-w-2xl z-20 text-center mx-auto md:text-left"
+            className="max-w-2xl z-20 text-center mx-auto md:text-left "
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: "easeInOut" }}
