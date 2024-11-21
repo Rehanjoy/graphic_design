@@ -9,7 +9,7 @@ import Footer from '@/components/footer';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black text-white p-8">
+    <div className="min-h-screen bg-black text-white p-16 md:p-8">
       <div className="max-w-6xl mx-auto space-y-12">
         <HeroSection />
         <GroupsSection />

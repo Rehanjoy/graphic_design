@@ -16,18 +16,18 @@ const Section: React.FC<SectionProps> = ({
   hoverColor,
   reverse = false,
 }) => (
-  <section className="bg-[#0D0D12] rounded-xl min-h-4xl space-x-10 flex items-center justify-center p-8">
+  <section className="bg-[#0D0D12] rounded-xl min-h-5xl space-x-10 flex items-center justify-center p-8">
     <div
       className={`flex flex-col md:flex-row ${
         reverse ? "md:flex-row-reverse" : ""
-      } gap-12 max-w-5xl items-center`}
+      } gap-60 md:max-w-5xl items-center`}
     >
       {/* Text Content */}
       <div className="flex flex-col text-left space-y-4 md:w-1/2">
         <p className={`text-sm ${textColor}`}>
           Coming this November - December 2023
         </p>
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+        <h1 className="text-7xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
           Big Global
           <br />
           E-Commerce

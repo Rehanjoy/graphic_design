@@ -16,7 +16,7 @@ const courses = [
 export function CoursesSection() {
   return (
     <section>
-      <h2 className="text-2xl font-bold mb-6">New Courses</h2>
+      <h2 className="text-2xl font-bold mb-6">Resent Blogs</h2>
       <div className="grid grid-cols-2 gap-6">
         {courses.map((course, index) => (
           <Card

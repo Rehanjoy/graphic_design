@@ -48,19 +48,32 @@ export default function Footer() {
             >
               Stay Connected
             </motion.h2>
-            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2">
-              <Input
-                type="email"
-                placeholder="Enter your email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="bg-gray-800 border-gray-700 text-white w-full sm:w-auto"
-                required
-              />
-              <Button type="submit" variant="outline" size="icon">
-                <Send className="h-4 w-4" />
-              </Button>
-            </form>
+            <form onSubmit={handleSubmit} className="flex gap-2 items-center">
+  {/* Input Field */}
+  <div className="relative w-full">
+    <Input
+      type="email"
+      placeholder="Enter your email"
+      value={email}
+      onChange={(e) => setEmail(e.target.value)}
+      className="bg-gray-800 border-gray-700 text-white w-full pl-4 pr-12 py-2 rounded-lg"
+      required
+    />
+    {/* Icon inside Input Field */}
+    
+  </div>
+
+  {/* Submit Button */}
+  <Button
+    type="submit"
+    className="bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition-colors"
+  >
+ 
+      <Send className="h-4 w-4" />
+    
+  </Button>
+</form>
+
           </div>
 
           {/* Quick Links Section */}
