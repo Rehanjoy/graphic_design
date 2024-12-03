@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
-import { Github, Twitter, Linkedin, Send } from 'lucide-react';
+import { Instagram, Twitter, Linkedin, Send } from 'lucide-react';
 
 export default function Footer() {
   const [email, setEmail] = useState('');
@@ -16,16 +16,16 @@ export default function Footer() {
   };
 
   const links = [
-    { name: 'About', href: '#' },
-    { name: 'Services', href: '#' },
-    { name: 'Projects', href: '#' },
-    { name: 'Contact', href: '#' },
+    { name: 'About', href: '/about' },
+    { name: 'Services', href: '/services' },
+    { name: 'Projects', href: '/projects' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   const socialLinks = [
-    { icon: Github, href: '#' },
-    { icon: Twitter, href: '#' },
-    { icon: Linkedin, href: '#' },
+    { icon: Instagram, href: 'https://www.instagram.com/yourhandle' },
+    { icon: Twitter, href: 'https://www.twitter.com/yourhandle' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/yourprofile' },
   ];
 
   return (
@@ -49,31 +49,26 @@ export default function Footer() {
               Stay Connected
             </motion.h2>
             <form onSubmit={handleSubmit} className="flex gap-2 items-center">
-  {/* Input Field */}
-  <div className="relative w-full">
-    <Input
-      type="email"
-      placeholder="Enter your email"
-      value={email}
-      onChange={(e) => setEmail(e.target.value)}
-      className="bg-gray-800 border-gray-700 text-white w-full pl-4 pr-12 py-2 rounded-lg"
-      required
-    />
-    {/* Icon inside Input Field */}
-    
-  </div>
+              {/* Input Field */}
+              <div className="relative w-full">
+                <Input
+                  type="email"
+                  placeholder="Enter your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="bg-gray-800 border-gray-700 text-white w-full pl-4 pr-12 py-2 rounded-lg"
+                  required
+                />
+              </div>
 
-  {/* Submit Button */}
-  <Button
-    type="submit"
-    className="bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition-colors"
-  >
- 
-      <Send className="h-4 w-4" />
-    
-  </Button>
-</form>
-
+              {/* Submit Button */}
+              <Button
+                type="submit"
+                className="bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition-colors"
+              >
+                <Send className="h-4 w-4" />
+              </Button>
+            </form>
           </div>
 
           {/* Quick Links Section */}
@@ -96,7 +91,7 @@ export default function Footer() {
                 >
                   <a
                     href={link.href}
-                    className="hover:text-yellow-400 transition-colors"
+                    className="hover:text-pink-600 transition-colors"
                   >
                     {link.name}
                   </a>
@@ -129,6 +124,8 @@ export default function Footer() {
                 </motion.a>
               ))}
             </div>
+            <p>+972598486982</p>
+
           </div>
 
           {/* Location Section */}
@@ -147,7 +144,7 @@ export default function Footer() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              Palestine Hebron
+              Isreal – Hebron
             </motion.p>
           </div>
         </div>
@@ -158,8 +155,8 @@ export default function Footer() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.5 }}
-        >
-          <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+          >
+          <p>&copy; 2024 Engineeringi. All rights reserved.</p>
         </motion.div>
       </div>
     </footer>

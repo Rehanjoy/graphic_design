@@ -1,14 +1,14 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
+import { Facebook, Instagram, Mail, MapPin, Phone, Twitter } from 'lucide-react';
 
 export default function ContactUs() {
   return (
     <div className="min-h-screen bg-black text-white p-1 md:p-8 ">
       <div className="max-w-6xl mx-auto  space-y-12  ">
         <section className="relative min-h-screen md:pt-20 text-white p-8">
-              {/* Background Gradient Overlay */}
+          {/* Background Gradient Overlay */}
           <div className="absolute inset-0 bg-gradient-to-br from-[#0D0D12] to-[#1C1C24] opacity-80 rounded-2xl z-0"></div>
           <div className="absolute top-1/4 left-1/3 w-[800px] h-[800px] bg-purple-600 opacity-10 blur-3xl rounded-full z-0" />
           <div className="absolute bottom-1/4 right-1/3 w-[700px] h-[700px] bg-pink-600 opacity-10 blur-3xl rounded-full z-0" />
@@ -32,15 +32,15 @@ export default function ContactUs() {
               <div className="space-y-4">
                 <div className="flex items-center space-x-4">
                   <Mail className="text-pink-500 w-6 h-6" />
-                  <span className="text-gray-300 text-lg">jane.doe@example.com</span>
+                  <span className="text-gray-300 text-lg">info@Engineeringi.com</span>
                 </div>
                 <div className="flex items-center space-x-4">
                   <Phone className="text-pink-500 w-6 h-6" />
-                  <span className="text-gray-300 text-lg">+1 123 456 7890</span>
+                  <span className="text-gray-300 text-lg">+972598486982, +972597450543</span>
                 </div>
                 <div className="flex items-center space-x-4">
                   <MapPin className="text-pink-500 w-6 h-6" />
-                  <span className="text-gray-300 text-lg">123 Designer Lane, Art City</span>
+                  <span className="text-gray-300 text-lg">Isreal – Hebron</span>
                 </div>
               </div>
 
@@ -49,7 +49,7 @@ export default function ContactUs() {
                 {[
                   { Icon: Facebook, link: '#', color: 'bg-blue-600' },
                   { Icon: Instagram, link: '#', color: 'bg-pink-500' },
-                  { Icon: Linkedin, link: '#', color: 'bg-blue-700' },
+                  { Icon: Twitter, link: '#', color: 'bg-blue-400' }, // Replaced LinkedIn with Twitter
                 ].map(({ Icon, link, color }, i) => (
                   <a
                     key={i}

@@ -68,7 +68,7 @@ export function HeroSection() {
             >
               {/* Main Circle */}
               <motion.div
-                className="absolute z-10 top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 bg-[#FFD84D] rounded-full w-48 h-48 sm:w-64 sm:h-64 flex items-center justify-center"
+                className="absolute z-10 top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 bg-pink-600 rounded-full w-48 h-48 sm:w-64 sm:h-64 flex items-center justify-center"
                 animate={{
                   scale: [1, 1.1, 1],
                   rotate: [0, 10, -10, 0],

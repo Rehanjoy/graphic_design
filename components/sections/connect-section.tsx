@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+// Importing graphic design-related icons from react-lucide
+import { PenTool, Camera, Image, Edit } from "lucide-react";
 
 export function ConnectSection() {
   return (
@@ -14,20 +16,27 @@ export function ConnectSection() {
             and collaborate with top professionals in the field.
           </p>
           <Link
-            className="bg-pink-500 text-black hover:bg-pink-400"
+            className="bg-pink-500 text-black hover:bg-pink-400 p-3 rounded-lg"
             href="/contact"
           >
             Join Now
           </Link>
         </div>
         <div className="absolute bottom-4 right-4 flex -space-x-4">
-          {[...Array(4)].map((_, i) => (
-            <div
-              key={i}
-              className="w-12 h-12 rounded-full bg-gray-800 border-2 border-black"
-            />
-          ))}
-          <div className="w-12 h-12 rounded-full bg-yellow-500 border-2 border-black flex items-center justify-center">
+          {/* Icons replacing the plain divs */}
+          <div className="w-12 h-12 rounded-full bg-gray-800 border-2 border-black flex items-center justify-center">
+            <PenTool size={24} className="text-pink-600" />
+          </div>
+          <div className="w-12 h-12 rounded-full bg-gray-800 border-2 border-black flex items-center justify-center">
+            <Camera size={24} className="text-pink-600" />
+          </div>
+          <div className="w-12 h-12 rounded-full bg-gray-800 border-2 border-black flex items-center justify-center">
+            <Image size={24} className="text-pink-600" />
+          </div>
+          <div className="w-12 h-12 rounded-full bg-gray-800 border-2 border-black flex items-center justify-center">
+            <Edit size={24} className="text-pink-600" />
+          </div>
+          <div className="w-12 h-12 rounded-full bg-pink-600 border-2 border-black flex items-center justify-center">
             <span className="text-sm font-bold">17k+</span>
           </div>
         </div>

@@ -5,13 +5,13 @@ import Image from "next/image";
 
 export default function Timeline() {
   const stats = [
-    { number: "01", text: "20+ EXPERIENCE", color: "#FFD700" },
-    { number: "02", text: "150+ PROJECTS", color: "#FFD700" },
-    { number: "03", text: "135+  MEMBERS", color: "#FFD700" },
+    { number: "01", text: "20+ EXPERIENCE", subText: "Content Mastery" },
+    { number: "02", text: "150+ PROJECTS", subText: "Successful Campaigns" },
+    { number: "03", text: "135+ MEMBERS", subText: "Creative Minds" },
   ];
 
   return (
-    <section className="bg-[#0D0D12]  rounded-xl min-h-screen">
+    <section className="bg-[#0D0D12] rounded-xl min-h-screen">
       <div className="container mx-auto px-2 md:px-10 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Section */}
@@ -50,9 +50,9 @@ export default function Timeline() {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
                 >
-                  <div className="flex items-center justify-center space-x-4  group">
+                  <div className="flex items-center justify-center space-x-4 group">
                     {/* Large Number and Overlay Text Container */}
-                    <div className="relative inline-flex  space-y-8 items-center justify-center">
+                    <div className="relative inline-flex space-y-8 items-center justify-center">
                       {/* Large Number Background */}
                       <span
                         className="text-[120px] font-bold text-[#0D0D12] opacity-30 transition-all duration-300 ease-in-out group-hover:text-pink-500 group-hover:opacity-100"
@@ -65,13 +65,13 @@ export default function Timeline() {
                       </span>
 
                       {/* Overlay Text */}
-                      <span className="relative z-10 px-4 py-1 font-semibold text-gray-500 text-sm inline-block transition-colors duration-300 ease-in-out group-hover:bg-[#fbfbf8]  group-hover:border group-hover:text-black">
+                      <span className="relative z-10 px-4 py-1 font-semibold text-gray-500 text-sm inline-block transition-colors duration-300 ease-in-out group-hover:bg-[#fbfbf8] group-hover:border group-hover:text-black">
                         {stat.text}
                       </span>
                     </div>
                     <div>
                       <h1 className="text-2xl text-gray-500 group-hover:text-pink-500">
-                        Years of Experience
+                        {stat.subText}
                       </h1>
                     </div>
                   </div>

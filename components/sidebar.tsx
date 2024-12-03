@@ -12,7 +12,7 @@ export default function Sidebar() {
 
   const menuItems = [
     { href: '/', label: 'Home', Icon: Home }, // Home icon
-    { href: '/projects', label: 'Projects', Icon: Folder }, // Folder icon for Projects
+    { href: '/service', label: 'Serivices', Icon: Folder }, // Folder icon for Projects
     { href: '/blog', label: 'Blogs', Icon: FileText }, // FileText icon for Blogs
     { href: '/contact', label: 'Contact Us', Icon: MessageCircle }, // Message icon for Contact Us
     { href: '/about', label: 'About Us', Icon: User }, // User icon for About Us
