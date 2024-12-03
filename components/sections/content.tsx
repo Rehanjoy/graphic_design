@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 interface SectionProps {
   imageSrc: string;
@@ -25,28 +26,30 @@ const Section: React.FC<SectionProps> = ({
       {/* Text Content */}
       <div className="flex flex-col text-left space-y-4 md:w-1/2">
         <p className={`text-sm ${textColor}`}>
-          Coming this November - December 2023
+          Experience Innovation with Ultratec 3D
         </p>
         <h1 className="text-7xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
-          Big Global
+          FORMULA 1 CAR 
           <br />
-          E-Commerce
-          <br />
-          Conference &apos;23
+          Powered by 3D Printing
         </h1>
         <p className="text-gray-400">
-          New York, US, Jacob K. Javits Convention Center
+          Explore the cutting-edge world of 3D printing with Ultratec 3D. From
+          prototype development to high-performance engineering solutions, our
+          services redefine the possibilities of manufacturing in Dubai.
         </p>
-        <Button className={`mt-4 ${buttonColor} hover:${hoverColor} text-black w-32`}>
-          Visit Now
-        </Button>
+        <Link href={'https://www.ultratec3d.ae/projects/'}
+          className={`mt-4 p-3 rounded-lg ${buttonColor} hover:${hoverColor} text-black w-32`}
+        >
+          Learn More
+        </Link>
       </div>
 
       {/* Image Content */}
       <div className="w-full relative group overflow-hidden md:w-1/2">
         <Image
           src={imageSrc}
-          alt="Conference Preview"
+          alt="F1 3D Printing Project by Ultratec"
           width={500}
           height={300}
           className="rounded-md object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
@@ -62,10 +65,9 @@ export const Content: React.FC = () => {
       <Section
         imageSrc="https://res.cloudinary.com/dg2pzsxp0/image/upload/v1730797683/2024-02-24T18_39_30.988Z-F1_edited_car_cph5ky.jpg"
         textColor="text-pink-500"
-        buttonColor="bg-pink-500"
-        hoverColor="bg-pink-400"
+        buttonColor="bg-pink-600"
+        hoverColor="bg-pink-500"
       />
- 
     </>
   );
 };
