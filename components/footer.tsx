@@ -1,31 +1,31 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-import { Input } from '@/components/ui/input';
-import { Button } from '@/components/ui/button';
-import { Instagram, Twitter, Linkedin, Send } from 'lucide-react';
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { Instagram, Twitter, Linkedin, Send } from "lucide-react";
 
 export default function Footer() {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Signed up with:', email);
-    setEmail('');
+    console.log("Signed up with:", email);
+    setEmail("");
   };
 
   const links = [
-    { name: 'About', href: '/about' },
-    { name: 'Services', href: '/services' },
-    { name: 'Projects', href: '/projects' },
-    { name: 'Contact', href: '/contact' },
+    { name: "About", href: "/about" },
+    { name: "Services", href: "/services" },
+    { name: "Projects", href: "/projects" },
+    { name: "Contact", href: "/contact" },
   ];
 
   const socialLinks = [
-    { icon: Instagram, href: 'https://www.instagram.com/yourhandle' },
-    { icon: Twitter, href: 'https://www.twitter.com/yourhandle' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/yourprofile' },
+    { icon: Instagram, href: "/" },
+    { icon: Twitter, href: "/" },
+    { icon: Linkedin, href: "/" },
   ];
 
   return (
@@ -125,7 +125,6 @@ export default function Footer() {
               ))}
             </div>
             <p>+972598486982</p>
-
           </div>
 
           {/* Location Section */}
@@ -155,7 +154,7 @@ export default function Footer() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          >
+        >
           <p>&copy; 2024 Engineeringi. All rights reserved.</p>
         </motion.div>
       </div>
