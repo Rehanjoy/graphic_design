@@ -4,9 +4,9 @@ import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import Image from "next/image";
 const stats = [
-  { number: "39K+", label: "Members" },
-  { number: "230+", label: "Resources" },
-  { number: "50+", label: "Groups" },
+  { number: "8+", label: "Years of Experience" },
+  { number: "230+", label: "Successful Projects" },
+  { number: "50+", label: "Team Members" },
   { number: "4.9", label: "Rating" },
 ];
 
