@@ -8,7 +8,7 @@ import Sidebar from '@/components/sidebar';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Design Lab - Creative Community',
+  title: 'Enginnering-Graphic Designer Website in Israel',
   description: 'Join the Ultimate Community for Designers and Creatives',
 };
 
