@@ -22,8 +22,7 @@ export function ConnectSection() {
             Join Now
           </Link>
         </div>
-        <div className="absolute bottom-4 right-4 flex -space-x-4">
-          {/* Icons replacing the plain divs */}
+        {/* <div className="absolute bottom-4 right-4 flex -space-x-4">
           <div className="w-12 h-12 rounded-full bg-gray-800 border-2 border-black flex items-center justify-center">
             <PenTool size={24} className="text-pink-600" />
           </div>
@@ -39,7 +38,7 @@ export function ConnectSection() {
           <div className="w-12 h-12 rounded-full bg-pink-600 border-2 border-black flex items-center justify-center">
             <span className="text-sm font-bold">17k+</span>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
